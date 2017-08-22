@@ -1,2 +1,2 @@
-# glasgow-docs
-Documentation for Glasgow
+# Glasgow Docs
+Hosts documentation for Glasgow.
