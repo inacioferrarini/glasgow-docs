@@ -10,10 +10,11 @@
     
   </head>
   <body>
+    <a name="//apple_ref/swift/Section/Classes" class="dashAnchor"></a>
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">Glasgow Docs</a> (100% documented)</p>
+        <p><a href="index.html">Glasgow Docs</a> (93% documented)</p>
         <p class="header-right"><a href="https://github.com/inacioferrarini/glasgow"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -69,7 +70,7 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Enums.html">Enums</a>
+            <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Enums/HttpMethod.html">HttpMethod</a>
@@ -128,9 +129,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:C7Glasgow10AppBaseApi"></a>
-                    <a name="//apple_ref/swift/Class/AppBaseApi" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C7Glasgow10AppBaseApi">AppBaseApi</a>
+                    <a name="/s:7Glasgow21ArrowArrayTransformerC"></a>
+                    <a name="//apple_ref/swift/Class/ArrowArrayTransformer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Glasgow21ArrowArrayTransformerC">ArrowArrayTransformer</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -138,17 +139,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Basic Api class.</p>
+                        <p>Uses <code>Arrow</code> to transform a given object of type AnyObject? into an array of target type, <code>Type</code>.</p>
 
-<p>Handles remote HTTP requests using Apple APIs.</p>
-
-                        <a href="Classes/AppBaseApi.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/ArrowArrayTransformer.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">AppBaseApi</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">ArrowArrayTransformer</span><span class="o">&lt;</span><span class="k">Type</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Transformer.html">Transformer</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/KeyPathTransformer.html">KeyPathTransformer</a></span> <span class="k">where</span> <span class="k">Type</span> <span class="p">:</span> <span class="kt">ArrowParsable</span></code></pre>
 
                         </div>
                       </div>
@@ -162,9 +161,73 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:C7Glasgow17ArrayDataProvider"></a>
+                    <a name="/s:7Glasgow16ArrowTransformerC"></a>
+                    <a name="//apple_ref/swift/Class/ArrowTransformer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Glasgow16ArrowTransformerC">ArrowTransformer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Uses <code>Arrow</code> to transform a given object of type AnyObject? into an object of target type, <code>Type</code>.</p>
+
+                        <a href="Classes/ArrowTransformer.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">ArrowTransformer</span><span class="o">&lt;</span><span class="k">Type</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Transformer.html">Transformer</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/KeyPathTransformer.html">KeyPathTransformer</a></span> <span class="k">where</span> <span class="k">Type</span> <span class="p">:</span> <span class="kt">ArrowParsable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Glasgow15ArrayDataSourceC"></a>
+                    <a name="//apple_ref/swift/Class/ArrayDataSource" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Glasgow15ArrayDataSourceC">ArrayDataSource</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array-based generic data source having elements of type <code>Type</code>.</p>
+
+                        <a href="Classes/ArrayDataSource.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">ArrayDataSource</span><span class="o">&lt;</span><span class="k">Type</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">NSObject</span> <span class="k">where</span> <span class="k">Type</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Glasgow17ArrayDataProviderC"></a>
                     <a name="//apple_ref/swift/Class/ArrayDataProvider" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C7Glasgow17ArrayDataProvider">ArrayDataProvider</a>
+                    <a class="token" href="#/s:7Glasgow17ArrayDataProviderC">ArrayDataProvider</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -187,7 +250,7 @@ translatable as sections and rows.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">ArrayDataProvider</span><span class="o">&lt;</span><span class="kt">ElementType</span><span class="p">:</span> <span class="kt">Equatable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/DataProvider.html">DataProvider</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">ArrayDataProvider</span><span class="o">&lt;</span><span class="kt">ElementType</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/DataProvider.html">DataProvider</a></span> <span class="k">where</span> <span class="kt">ElementType</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
                       </div>
@@ -201,137 +264,9 @@ translatable as sections and rows.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:C7Glasgow15ArrayDataSource"></a>
-                    <a name="//apple_ref/swift/Class/ArrayDataSource" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C7Glasgow15ArrayDataSource">ArrayDataSource</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Array-based generic data source having elements of type <code>Type</code>.</p>
-
-                        <a href="Classes/ArrayDataSource.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">ArrayDataSource</span><span class="o">&lt;</span><span class="k">Type</span><span class="p">:</span> <span class="kt">Equatable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:C7Glasgow21ArrowArrayTransformer"></a>
-                    <a name="//apple_ref/swift/Class/ArrowArrayTransformer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C7Glasgow21ArrowArrayTransformer">ArrowArrayTransformer</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Uses <code>Arrow</code> to transform a given object of type AnyObject? into an array of target type, <code>Type</code>.</p>
-
-                        <a href="Classes/ArrowArrayTransformer.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">ArrowArrayTransformer</span><span class="o">&lt;</span><span class="k">Type</span><span class="p">:</span> <span class="kt">ArrowParsable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/Transformer.html">Transformer</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/KeyPathTransformer.html">KeyPathTransformer</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:C7Glasgow16ArrowTransformer"></a>
-                    <a name="//apple_ref/swift/Class/ArrowTransformer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C7Glasgow16ArrowTransformer">ArrowTransformer</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Uses <code>Arrow</code> to transform a given object of type AnyObject? into an object of target type, <code>Type</code>.</p>
-
-                        <a href="Classes/ArrowTransformer.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">ArrowTransformer</span><span class="o">&lt;</span><span class="k">Type</span><span class="p">:</span> <span class="kt">ArrowParsable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/Transformer.html">Transformer</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/KeyPathTransformer.html">KeyPathTransformer</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:C7Glasgow23BaseTableViewController"></a>
-                    <a name="//apple_ref/swift/Class/BaseTableViewController" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C7Glasgow23BaseTableViewController">BaseTableViewController</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Provides a basic TableViewController capable of perform data synchronization operations.</p>
-
-                        <a href="Classes/BaseTableViewController.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BaseTableViewController</span><span class="p">:</span> <span class="kt"><a href="Classes/DataBasedViewController.html">DataBasedViewController</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:C7Glasgow16CoreDataProvider"></a>
+                    <a name="/s:7Glasgow16CoreDataProviderC"></a>
                     <a name="//apple_ref/swift/Class/CoreDataProvider" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C7Glasgow16CoreDataProvider">CoreDataProvider</a>
+                    <a class="token" href="#/s:7Glasgow16CoreDataProviderC">CoreDataProvider</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -347,7 +282,7 @@ translatable as sections and rows.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">CoreDataProvider</span><span class="o">&lt;</span><span class="kt">EntityType</span><span class="p">:</span> <span class="kt">NSManagedObject</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Classes/ArrayDataProvider.html">ArrayDataProvider</a></span><span class="o">&lt;</span><span class="kt">EntityType</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">NSFetchedResultsControllerDelegate</span><span class="p">,</span> <span class="kt"><a href="Protocols/Refreshable.html">Refreshable</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">CoreDataProvider</span><span class="o">&lt;</span><span class="kt">EntityType</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="Classes/ArrayDataProvider.html">ArrayDataProvider</a></span><span class="o">&lt;</span><span class="kt">EntityType</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">NSFetchedResultsControllerDelegate</span><span class="p">,</span> <span class="kt"><a href="Protocols/Refreshable.html">Refreshable</a></span> <span class="k">where</span> <span class="kt">EntityType</span> <span class="p">:</span> <span class="kt">NSManagedObject</span></code></pre>
 
                         </div>
                       </div>
@@ -361,9 +296,9 @@ translatable as sections and rows.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:C7Glasgow13CoreDataStack"></a>
+                    <a name="/s:7Glasgow13CoreDataStackC"></a>
                     <a name="//apple_ref/swift/Class/CoreDataStack" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C7Glasgow13CoreDataStack">CoreDataStack</a>
+                    <a class="token" href="#/s:7Glasgow13CoreDataStackC">CoreDataStack</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -379,7 +314,7 @@ translatable as sections and rows.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">CoreDataStack</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">CoreDataStack</span></code></pre>
 
                         </div>
                       </div>
@@ -393,9 +328,75 @@ translatable as sections and rows.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:C7Glasgow23DataBasedViewController"></a>
+                    <a name="/s:7Glasgow10AppBaseApiC"></a>
+                    <a name="//apple_ref/swift/Class/AppBaseApi" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Glasgow10AppBaseApiC">AppBaseApi</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Basic Api class.</p>
+
+<p>Handles remote HTTP requests using Apple APIs.</p>
+
+                        <a href="Classes/AppBaseApi.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">AppBaseApi</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Glasgow@objc(cs)BaseTableViewController"></a>
+                    <a name="//apple_ref/swift/Class/BaseTableViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Glasgow@objc(cs)BaseTableViewController">BaseTableViewController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides a basic TableViewController capable of perform data synchronization operations.</p>
+
+                        <a href="Classes/BaseTableViewController.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">BaseTableViewController</span> <span class="p">:</span> <span class="kt"><a href="Classes/DataBasedViewController.html">DataBasedViewController</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Glasgow@objc(cs)DataBasedViewController"></a>
                     <a name="//apple_ref/swift/Class/DataBasedViewController" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C7Glasgow23DataBasedViewController">DataBasedViewController</a>
+                    <a class="token" href="#/c:@M@Glasgow@objc(cs)DataBasedViewController">DataBasedViewController</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -411,7 +412,7 @@ translatable as sections and rows.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">DataBasedViewController</span><span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">DataBasedViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -425,9 +426,42 @@ translatable as sections and rows.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:C7Glasgow27PageLoaderTableViewDelegate"></a>
+                    <a name="/s:7Glasgow24TableViewArrayDataSourceC"></a>
+                    <a name="//apple_ref/swift/Class/TableViewArrayDataSource" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Glasgow24TableViewArrayDataSourceC">TableViewArrayDataSource</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array-based UITableView data source having elements of type <code>Type</code> and using <code>ConfigurableTableViewCell</code>.</p>
+
+                        <a href="Classes/TableViewArrayDataSource.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">TableViewArrayDataSource</span><span class="o">&lt;</span><span class="kt">CellType</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="p">,</span> <span class="k">Type</span><span class="p">:</span> <span class="kt">Equatable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Classes/ArrayDataSource.html">ArrayDataSource</a></span><span class="o">&lt;</span><span class="k">Type</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">UITableViewDataSource</span>
+    <span class="k">where</span> <span class="kt">CellType</span><span class="p">:</span> <span class="kt"><a href="Protocols/Configurable.html">Configurable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Glasgow27PageLoaderTableViewDelegateC"></a>
                     <a name="//apple_ref/swift/Class/PageLoaderTableViewDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C7Glasgow27PageLoaderTableViewDelegate">PageLoaderTableViewDelegate</a>
+                    <a class="token" href="#/s:7Glasgow27PageLoaderTableViewDelegateC">PageLoaderTableViewDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -444,7 +478,7 @@ When the TableView is scrolled to the bottom, will check if should fetch the nex
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">PageLoaderTableViewDelegate</span><span class="o">&lt;</span><span class="kt">CellType</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="p">,</span> <span class="k">Type</span><span class="p">:</span> <span class="kt">Equatable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Classes/TableViewBlockDelegate.html">TableViewBlockDelegate</a></span><span class="o">&lt;</span><span class="kt">CellType</span><span class="p">,</span> <span class="k">Type</span><span class="o">&gt;</span>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">PageLoaderTableViewDelegate</span><span class="o">&lt;</span><span class="kt">CellType</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="p">,</span> <span class="k">Type</span><span class="p">:</span> <span class="kt">Equatable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Classes/TableViewBlockDelegate.html">TableViewBlockDelegate</a></span><span class="o">&lt;</span><span class="kt">CellType</span><span class="p">,</span> <span class="k">Type</span><span class="o">&gt;</span>
     <span class="k">where</span> <span class="kt">CellType</span><span class="p">:</span> <span class="kt"><a href="Protocols/Configurable.html">Configurable</a></span></code></pre>
 
                         </div>
@@ -459,42 +493,9 @@ When the TableView is scrolled to the bottom, will check if should fetch the nex
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:C7Glasgow24TableViewArrayDataSource"></a>
-                    <a name="//apple_ref/swift/Class/TableViewArrayDataSource" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C7Glasgow24TableViewArrayDataSource">TableViewArrayDataSource</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Array-based UITableView data source having elements of type <code>Type</code> and using <code>ConfigurableTableViewCell</code>.</p>
-
-                        <a href="Classes/TableViewArrayDataSource.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">TableViewArrayDataSource</span><span class="o">&lt;</span><span class="kt">CellType</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="p">,</span> <span class="k">Type</span><span class="p">:</span> <span class="kt">Equatable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Classes/ArrayDataSource.html">ArrayDataSource</a></span><span class="o">&lt;</span><span class="k">Type</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">UITableViewDataSource</span>
-    <span class="k">where</span> <span class="kt">CellType</span><span class="p">:</span> <span class="kt"><a href="Protocols/Configurable.html">Configurable</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:C7Glasgow22TableViewBlockDelegate"></a>
+                    <a name="/s:7Glasgow22TableViewBlockDelegateC"></a>
                     <a name="//apple_ref/swift/Class/TableViewBlockDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C7Glasgow22TableViewBlockDelegate">TableViewBlockDelegate</a>
+                    <a class="token" href="#/s:7Glasgow22TableViewBlockDelegateC">TableViewBlockDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -510,7 +511,7 @@ When the TableView is scrolled to the bottom, will check if should fetch the nex
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">TableViewBlockDelegate</span><span class="o">&lt;</span><span class="kt">CellType</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="p">,</span> <span class="k">Type</span><span class="p">:</span> <span class="kt">Equatable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">UITableViewDelegate</span>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">TableViewBlockDelegate</span><span class="o">&lt;</span><span class="kt">CellType</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="p">,</span> <span class="k">Type</span><span class="p">:</span> <span class="kt">Equatable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">UITableViewDelegate</span>
     <span class="k">where</span> <span class="kt">CellType</span><span class="p">:</span> <span class="kt"><a href="Protocols/Configurable.html">Configurable</a></span></code></pre>
 
                         </div>
@@ -523,8 +524,8 @@ When the TableView is scrolled to the bottom, will check if should fetch the nex
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://github.com/inacioferrarini/glasgow" target="_blank" rel="external">Inácio Ferrarini</a>. All rights reserved. (Last updated: 2017-08-21)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/inacioferrarini/glasgow" target="_blank" rel="external">Inácio Ferrarini</a>. All rights reserved. (Last updated: 2018-04-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
